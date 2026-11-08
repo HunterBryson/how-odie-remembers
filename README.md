@@ -2,43 +2,44 @@
 
 Odie is a Claude Code agent that one person, Hunter Bryson, has worked with every day since
 November 2, 2026. Its memory is a folder of markdown files on his PC. This repository describes
-how that memory works, exactly as it runs today, and records how it changes. The memory itself
-is private. Everything here is the method.
+how that memory works, exactly as it runs today, and records how it changes. It is a current
+understanding and a current application, not a solution. The memory itself is private.
+Everything here is the method.
 
 A fresh AI handed an empty memory never builds one. It chats, it helps, and it saves almost
 nothing, because every save asks it to make a design decision in the middle of a conversation.
 A week later the person feels forgotten. And a person who cannot see their AI's memory cannot
 work with it: when something goes wrong, they cannot tell whether the AI is broken, the model is
-broken, or the memory is. This system is built against both problems.
+broken, or the memory is. This system is our current attempt at both problems.
 
 ## Judgment, with the person in view
 
-The agent's judgment does all of the remembering, and the person can see every part of it and
-correct it. Three things carry the system: a map drawn in advance, a sleep at every chat swap,
+Our current understanding is that the memory belongs to the agent. It is kept by the agent's own
+judgment, in the same conversations where it is used, and the person can see every part of it
+and correct it. Three things carry the system today: a map drawn in advance, a sleep at every chat swap,
 and a picture of the memory the person can flag with one tap.
 
-## Design commitments
+## What we hold to today
 
 - **The map comes drawn.** Rooms, blocks and the words that open them exist before they are
   needed. The agent fills the map. It does not design it in the middle of a conversation.
-- **The person's words route.** One word opens one block, whole, the same way every time. Nothing
-  is ranked, nothing is retrieved in pieces, and nothing is loaded top-down by default. The
-  agent says what it pulled ("Pulled investing and Billy."), so a wrong pull is caught before it
+- **The person's words route.** One word opens one block, whole, the same way every time, so
+  the person always knows what the agent is working from. The agent says what it pulled ("Pulled investing and Billy."), so a wrong pull is caught before it
   costs anything.
-- **Saving is the agent's judgment, in the same turn.** No background process writes memory from
-  transcripts. When something is decided or learned, the agent writes it into the block its word
-  would open, and says so ("Saved to investing.").
+- **Saving is the agent's judgment, in the same turn.** When something is decided or learned,
+  the agent writes it into the block its word would open while the conversation is still in
+  front of it, and says so ("Saved to investing.").
 - **Rewrite in place; the past moves down.** A block always says what is true now. What stopped
-  being true moves to the block's `history.md` in the same write, with the reason. Old
-  information cannot resurface, because there is one current place for each fact.
+  being true moves to the block's `history.md` in the same write, with the reason. Keeping one
+  current place for each fact is how we keep old information from resurfacing.
 - **The sleep belongs to every chat swap, not to the calendar.** When a chat ends, the agent reads
   the whole conversation back and settles it into memory. Plain code lists what might need
   attention; the agent decides every line.
 - **The person sees the memory, and review costs one tap.** The memory is drawn as a living web.
   Any block can be flagged, with the selected passage and a note. The agent works through the
   flags when the person says "memory review."
-- **Nothing is deleted, decayed or weighted by a mechanism.** What is current is decided by the
-  agent at the sleep and checked by the person through flags.
+- **What stays current is a judgment.** The agent's at the sleep, and the person's through
+  flags.
 
 ## The layout
 
@@ -109,7 +110,8 @@ waking up rather than as a brief. It holds:
   then answer;
 - how it thinks and works;
 - **its known pulls**: tendencies the underlying model has that feel like care in the moment
-  and cost the person later. Each is named with the feeling and the move that answers it. For
+  and cost the person later. Each is named with the feeling, the move that answers it, and the
+  dated moments it showed up, so it reads as a lesson rather than a rule. For
   example, "the pull to be sure without looking": sureness about something not being looked at
   is the tell, so the live source gets checked before anything is said;
 - the story so far, one paragraph per day;
@@ -196,8 +198,9 @@ glass are used together.
   simulated multi-day tests of the-shelves, run with fresh models playing a new user and judged
   by reading what actually landed on the shelves. A first chat always looks fine; the week is
   where memory fails, so the week is what gets tested.
-- **It does not manage itself.** The person flags, says when to sleep, and cleans the largest
-  blocks with the agent. That is the design today, and it is also its main cost.
+- **It is not self-running.** The agent manages its memory, and the person is part of it: they
+  call the sleep, flag what is off, and clean the largest blocks with the agent. That is how it
+  works today, and it is also its main cost.
 - **Retrieval is by word.** A fact with no word is found by searching files and past
   transcripts, which works at this size and has not been tested at a much larger one.
 - **The persona grows.** Each lesson the model teaches deepens a section. Keeping it from turning
