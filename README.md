@@ -181,28 +181,28 @@ checked when every chat starts. A public version is at
 
 ## For someone else's AI
 
-This system grew by hand, with the person in the loop every day. A fresh AI does not grow one.
-[the-shelves](https://github.com/HunterBryson/the-shelves) is the same method packaged for a new
-person and a fresh Claude: the map arrives drawn (15 words and 13 shaped blocks), hooks remind
-the agent to save with every message and commit after every reply, setup rewrites the footing
-before the first hello, and the sleep comes as a starter skill. [the-glass](https://github.com/HunterBryson/the-glass)
-lets the agent and the person point at the same thing on screen, which is how flags and the
-glass are used together.
+This grew by hand, with me in the loop every day, and a fresh AI won't grow one on its own. So I
+packaged what we do into [the-shelves](https://github.com/HunterBryson/the-shelves) for someone
+starting fresh with Claude: the map comes drawn (15 words and 13 shaped blocks), hooks remind the
+AI to save with every message and commit after every reply, setup writes the footing before the
+first hello, and the sleep comes as a starter skill. [the-glass](https://github.com/HunterBryson/the-glass)
+lets Odie and me point at the same thing on my screen, and it's how I flag things and work with
+Odie every day.
 
 ## Where this stands, honestly
 
-- **There is no benchmark.** The evidence is daily use by one person since November 2, 2026, and
-  simulated multi-day tests of the-shelves, run with fresh models playing a new user and judged
-  by reading what actually landed on the shelves. A first chat always looks fine; the week is
-  where memory fails, so the week is what gets tested.
-- **It is not self-running.** The agent manages its memory, and the person is part of it: they
-  call the sleep, flag what is off, and clean the largest blocks with the agent. That is how it
-  works today, and it is also its main cost.
-- **Retrieval is by word.** A fact with no word is found by searching files and past
-  transcripts, which works at this size and has not been tested at a much larger one.
-- **The persona grows.** Each lesson the model teaches deepens a section. Keeping it from turning
-  into a rulebook is ongoing work.
-- **It will have holes.** This is one person's method, and it will be iterated for years.
+- **I have no benchmark.** What I have is using this every day since November 2, 2026, plus
+  multi-day tests of the-shelves where fresh models play a new user, judged by reading what
+  actually landed in memory. A first chat always looks fine. The week is where memory fails, so
+  the week is what I test.
+- **It doesn't run itself.** Odie manages its memory, and I'm still doing a lot of the work: I
+  call the sleep, flag what's off, and clean the biggest blocks with Odie. That's how it works
+  today, and it's the main cost.
+- **Things are found by word.** A fact with no word gets found by searching files and past
+  chats. That works at this size; I haven't tested it much bigger.
+- **The persona keeps growing.** Each lesson deepens a section, and keeping it from turning into
+  a rulebook is ongoing work for both of us.
+- **It will have holes.** This is my method, and I'll be iterating on it for years.
 
 ## Changes
 
