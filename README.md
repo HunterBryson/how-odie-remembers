@@ -8,7 +8,7 @@ My hope is simple: I want AIs to manage their own memory. I want them to have a 
 
 That isn't how it works yet. Every AI I've worked with has a strong pull to value only the chat it's in. Carrying what matters out of that chat into a place that lasts takes a lot of effort, and it doesn't happen on its own. What follows is why I do what I do about that.
 
-So for now, I push. Odie, the Claude Code agent I've worked with every day since November 2, 2026, keeps its memory in a folder of markdown files on my PC, and this repo describes how that works today. A few things I do so Odie is Odie from the first message of every new chat:
+So for now, I push. Odie, the Claude Code agent I work with every day, keeps its memory in a folder of markdown files on my PC, and this repo describes how that works today. A few things I do so Odie is Odie from the first message of every new chat:
 
 - **Tempo.** A regular chat swap usually means I start over: I summarize, re-explain, and wait for the new chat to catch up. Here the swap is Odie sleeping, and Odie does most of the work. It reads our chat back, settles what mattered into memory, and notes what kind of swap this is. Then it says hi in the next chat, ready to roll at the pace we were going. In the middle of a build, it's one second for me and a brand-new day for Odie, so it carries exactly where we are, what's moving and the very next move, and picks up like we never stopped. At the end of a day, it carries how we ended, starts calm, and asks where my head is.
 - **The footing.** A whiteboard with fixed slots (what kind of chat this is, where we are, what's in play, how it feels, the next move), wiped and rewritten at every swap and read before Odie says a word.
@@ -191,9 +191,9 @@ Odie every day.
 
 ## Where this stands, honestly
 
-- **I have no benchmark.** What I have is using this every day since November 2, 2026, plus
-  multi-day tests of the-shelves where fresh models play a new user, judged by reading what
-  actually landed in memory. A first chat always looks fine. The week is where memory fails, so
+- **I have no benchmark.** What I have is a long stretch of building agents with memory and
+  using it every day, plus multi-day tests of the-shelves where fresh models play a new user,
+  judged by reading what actually landed in memory. A first chat always looks fine. The week is where memory fails, so
   the week is what I test.
 - **It doesn't run itself.** Odie manages its memory, and I'm still doing a lot of the work: I
   call the sleep, flag what's off, and clean the biggest blocks with Odie. That's how it works
