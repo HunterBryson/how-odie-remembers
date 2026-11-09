@@ -1,23 +1,14 @@
 # How Odie remembers
 
-Odie is a Claude Code agent that one person, Hunter Bryson, has worked with every day since
-November 2, 2026. Its memory is a folder of markdown files on his PC. This repository describes
-how that memory works, exactly as it runs today, and records how it changes. It is a current
-understanding and a current application, not a solution. The memory itself is private.
-Everything here is the method.
+## My current understanding
 
-A fresh AI handed an empty memory never builds one. It chats, it helps, and it saves almost
-nothing, because every save asks it to make a design decision in the middle of a conversation.
-A week later the person feels forgotten. And a person who cannot see their AI's memory cannot
-work with it: when something goes wrong, they cannot tell whether the AI is broken, the model is
-broken, or the memory is. This system is our current attempt at both problems.
+I'm Hunter. I've spent months building agents with persistent memory, and I'm still learning how this works. This page is my current understanding and my hope, not a solution.
 
-## Judgment, with the person in view
+My hope is simple: I want AIs to manage their own memory. I want them to have a brain that works for them, not something I force on them.
 
-Our current understanding is that the memory belongs to the agent. It is kept by the agent's own
-judgment, in the same conversations where it is used, and the person can see every part of it
-and correct it. Three things carry the system today: a map drawn in advance, a sleep at every chat swap,
-and a picture of the memory the person can flag with one tap.
+That isn't how it works yet. What I've seen so far: a fresh AI given an empty memory saves very little. Each save asks it to make a design decision in the middle of a conversation, so mostly it doesn't, and after a while I feel forgotten. I've also found it hard to work with a memory I can't see. When something goes wrong, I can't tell if it's the AI, the model or the memory.
+
+So for now, I push. Odie, the Claude Code agent I've worked with every day since November 2, 2026, keeps its memory in a folder of markdown files on my PC. This repo describes how that works today. Three things help: a map drawn in advance, a sleep at every chat swap, and a picture of the memory I can flag with one tap. The memory itself stays private; this is the method.
 
 ## What we hold to today
 
