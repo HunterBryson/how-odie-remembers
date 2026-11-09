@@ -63,12 +63,18 @@ memory/
 Four files load at the start of every chat, through `CLAUDE.md`: the persona, the human, the
 desk and the footing. Everything else is reached by a word.
 
-At the time of writing there are about 120 markdown files, about 80 of them working blocks and
-room lists, and about 50 words on the desk.
+**Size is guidance, not a wall.** The four boot files stay as small as they can, because they're
+paid for on every turn. A topic block is paid for only when its word fires, so it can be as big
+as the topic needs, and it's always loaded whole. This was a big step for me. I used to break
+memory into lots of small pieces to stay under limits, and every small piece was a choice at
+pull time: a place where a fresh chat could pull something different from yesterday's. Now each
+topic is compiled into one block, and the pull is the same every time. The guides we use today:
+a block past about 30,000 characters gets asked whether one of its sections has become its own
+topic, and a room's list past about 6,000 is probably carrying a block's content. Neither is a cap.
 
 ## The desk
 
-The desk is a table, and it is the only way the agent finds anything:
+The desk is what lets the person steer memory without knowing where anything lives. It's one table. Each row is a word the person and the agent named together, and each word opens exactly one block, whole, the same way every time. When the person says "investing," the agent loads the investing block before answering and says so ("Pulled investing."), so the person always knows what the agent is working from and can catch a wrong pull before it costs anything:
 
 | Word | Area | What it pulls | Block | Also |
 |---|---|---|---|---|
