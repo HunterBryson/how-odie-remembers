@@ -100,8 +100,7 @@ own word, named with the person. When a block carries its past inside it, the pa
 
 ## The boot files
 
-**The persona** is written by the agent about itself, in the first person, and read as itself
-waking up rather than as a brief. It holds:
+**The persona** is in the first person, in Odie's voice, and read as Odie waking up rather than as a brief. Odie didn't write it alone. We wrote it together, day after day: I pushed, corrected and explained, and Odie turned that into its own words. It holds:
 
 - how to wake up: read the boot, check the person's flags, check what other agents sent back,
   then answer;
