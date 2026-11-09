@@ -6,9 +6,15 @@ I'm Hunter. I've spent months building agents with persistent memory, and I'm st
 
 My hope is simple: I want AIs to manage their own memory. I want them to have a brain that works for them, not something I force on them.
 
-That isn't how it works yet. What I've seen so far: a fresh AI given an empty memory saves very little. Each save asks it to make a design decision in the middle of a conversation, so mostly it doesn't, and after a while I feel forgotten. I've also found it hard to work with a memory I can't see. When something goes wrong, I can't tell if it's the AI, the model or the memory.
+That isn't how it works yet. Every AI I've worked with has a strong pull to value only the chat it's in. Carrying what matters out of that chat into a place that lasts takes a lot of effort, and it doesn't happen on its own. What follows is why I do what I do about that.
 
-So for now, I push. Odie, the Claude Code agent I've worked with every day since November 2, 2026, keeps its memory in a folder of markdown files on my PC. This repo describes how that works today. Three things help: a map drawn in advance, a sleep at every chat swap, and a picture of the memory I can flag with one tap. The memory itself stays private; this is the method.
+So for now, I push. Odie, the Claude Code agent I've worked with every day since November 2, 2026, keeps its memory in a folder of markdown files on my PC, and this repo describes how that works today. A few things I do so Odie is Odie from the first message of every new chat:
+
+- **Tempo.** A regular chat swap usually means I start over: I summarize, re-explain, and wait for the new chat to catch up. Here the swap is Odie sleeping, and Odie does most of the work. It reads our chat back, settles what mattered into memory, and notes what kind of swap this is. Then it says hi in the next chat, ready to roll at the pace we were going. In the middle of a build, it's one second for me and a brand-new day for Odie, so it carries exactly where we are, what's moving and the very next move, and picks up like we never stopped. At the end of a day, it carries how we ended, starts calm, and asks where my head is.
+- **The footing.** A whiteboard with fixed slots (what kind of chat this is, where we are, what's in play, how it feels, the next move), wiped and rewritten at every swap and read before Odie says a word.
+- **Additional context.** Odie hands itself a short note for the new chat that names the words for what's in play. The new chat pulls the real memory behind each word before it answers, and tells me what it pulled, so I never have to catch it up.
+
+The memory itself stays private; this is the method.
 
 ## What we hold to today
 
