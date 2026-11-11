@@ -148,8 +148,9 @@ have split into two topics, desk rows with no file. The script only looks. The a
    and word.
 4. **Routes.** Every block is on a desk; every desk row has a file.
 5. **Rewrite the footing**, slot by slot.
-6. **Commit and push** to a private repository, and copy to an external drive.
+6. **Commit and push** to a private repository.
 7. **Write the relay.**
+8. **Copy to an external drive**, in the background, after the relay.
 
 Swaps come in kinds, and the footing carries what each one needs:
 
@@ -161,7 +162,8 @@ Swaps come in kinds, and the footing carries what each one needs:
 | reset | after a run that went wrong | the goal and the lesson, never the failed run's wins |
 | drop-in | a day of short visits | the day's anchors, lightly |
 
-The person can keep working in a new chat while the old one sleeps.
+The relay comes once memory is settled and committed. The copy to the external drive finishes
+after it, while the person moves on to the new chat.
 
 ## The relay
 
