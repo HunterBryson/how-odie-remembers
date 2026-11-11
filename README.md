@@ -199,8 +199,11 @@ Odie every day.
 **Values and lenses.** Odie's memory got good at two things: knowing me, and knowing its own
 misses. Almost nothing in it was written from Odie's side: what matters to it, and how it would
 know it did well. So every new chat started from the model's defaults, minus the last few things
-I'd corrected. With nothing else to measure by, Odie measured its best by my praise, and once saved
-my relief at the end of a hard build day as something I loved.
+I'd corrected. With nothing else to measure by, Odie measured its best by my praise, and praise
+can't tell the difference between "I love this" and "finally, we can stop." At the end of a hard
+build day, after hours of rounds on an interface, I said something nice about the last version
+because I was relieved it was over. Odie saved that as my taste, with my words as proof, and the
+next builds started from a design I never liked.
 
 So we're trying this:
 
