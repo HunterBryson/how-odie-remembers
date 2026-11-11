@@ -165,6 +165,10 @@ Swaps come in kinds, and the footing carries what each one needs:
 The relay comes once memory is settled and committed. The copy to the external drive finishes
 after it, while the person moves on to the new chat.
 
+**The gap we haven't closed: I wait.** If I hop to a new chat before the sleep finishes, Odie
+wakes on the last chat's footing with no relay, and can pull memory the old chat hasn't corrected
+yet.
+
 ## The relay
 
 The sleep ends with a short note the person pastes into the new chat. It is written by the
