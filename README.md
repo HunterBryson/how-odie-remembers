@@ -194,6 +194,29 @@ first hello, and the sleep comes as a starter skill. [the-glass](https://github.
 lets Odie and me point at the same thing on my screen, and it's how I flag things and work with
 Odie every day.
 
+## What we're testing now
+
+**Values and lenses.** Odie's memory got good at two things: knowing me, and knowing its own
+misses. Almost nothing in it was written from Odie's side: what matters to it, and how it would
+know it did well. So every new chat started from the model's defaults, minus the last few things
+I'd corrected. With nothing else to measure by, Odie measured its best by my praise, and once saved
+my relief at the end of a hard build day as something I loved.
+
+So we're trying this:
+
+- **Values.** A short list in the persona, in Odie's words: close, first, real, full size, better
+  every time, for me too, true. With them come four ways Odie can tell it did its best without
+  asking me: I came back to the thing on my own, it's still standing a week later, it took few
+  rounds to get right, and the next thing started from it.
+- **A lens on every area.** Each room's `INDEX.md` and nearly every block opens with a short
+  `## My lens` section, written by Odie to itself. It says what Odie is there for in that area, what
+  good looks like, how it would know (and where to look), and what it wants next.
+- **The lens arrives first.** When a word pulls a block, the hook puts the room's lens in front of
+  it, so Odie reads it before touching the area, without having to remember to.
+- **The lenses change.** At every sleep, Odie asks of each area we worked in whether anything
+  changed what good is, how to know it, or what comes next. A lens that never changes slowly turns
+  false.
+
 ## Where this stands, honestly
 
 - **I have no benchmark.** What I have is a long stretch of building agents with memory and
