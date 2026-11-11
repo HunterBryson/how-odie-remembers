@@ -19,7 +19,8 @@ The memory itself stays private; this is the method.
 ## What we hold to today
 
 - **The map comes drawn.** Rooms, blocks and the words that open them exist before they are
-  needed. The agent fills the map. It does not design it in the middle of a conversation.
+  needed. When a new topic shows up, it gets a block and a word named with the person. The map
+  isn't redesigned in the middle of a conversation.
 - **The person's words route.** One word opens one block, whole, the same way every time, so
   the person always knows what the agent is working from. The agent says what it pulled ("Pulled investing and Billy."), so a wrong pull is caught before it
   costs anything.
