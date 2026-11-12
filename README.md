@@ -27,9 +27,12 @@ The memory itself stays private; this is the method.
 - **Saving is the agent's judgment, in the same turn.** When something is decided or learned,
   the agent writes it into the block its word would open while the conversation is still in
   front of it, and says so ("Saved to investing.").
-- **Rewrite in place; the past moves down.** A block always says what is true now. What stopped
-  being true moves to the block's `history.md` in the same write, with the reason. Keeping one
-  current place for each fact is how we keep old information from resurfacing.
+- **Rewrite in place; the past leaves.** A block always says what is true now. What stopped
+  being true moves out of memory in the same write, into an archive that never loads, with the
+  reason. I used to keep a `history.md` under each block, and it backfired: those files were
+  never pulled, they slowly held newer truth than the blocks above them, and old tastes hid in
+  them. Now the archive is its own private repo, outside the memory folder, at the same paths.
+  Nothing is lost, and none of it is in our working relationship.
 - **The sleep belongs to every chat swap, not to the calendar.** When a chat ends, the agent reads
   the whole conversation back and settles it into memory. Plain code lists what might need
   attention; the agent decides every line.
@@ -56,10 +59,12 @@ memory/
 │   ├── INDEX.md          the room's short list, and notes for working in it
 │   ├── investing.md      a block: one topic, loaded whole when its word fires
 │   └── investing/        the block's support, reached on purpose, never by default
-│       ├── history.md    what the block used to say, and why it changed
 │       └── gotchas.md    snags hit and fixed
 ├── builds/  house/  music/  voice/  work/  comms/  time/  errands/  people/
 ```
+
+Beside it, never loaded: `odie-archive/`, a private repo with what memory used to say, at the
+same paths.
 
 Four files load at the start of every chat, through `CLAUDE.md`: the persona, the human, the
 desk and the footing. Everything else is reached by a word.
@@ -102,8 +107,7 @@ has been learned. Its support lives in a folder of the same name, and the agent 
 files only on purpose.
 
 Size follows need. When a section grows into its own topic, it becomes its own block with its
-own word, named with the person. When a block carries its past inside it, the past moves to its
-`history.md`.
+own word, named with the person. When a block carries its past inside it, the past moves to the archive.
 
 ## The boot files
 
@@ -143,7 +147,7 @@ have split into two topics, desk rows with no file. The script only looks. The a
    or noticed and never saved? Whatever is missing is saved first.
 1. **Settle.** Everything decided or learned goes to its home block. "Right now" is rewritten.
 2. **Retire.** Every candidate on the card is checked against the live thing (the repo, the
-   service, the thread) and rewritten to what is true. The old version goes to `history.md`.
+   service, the thread) and rewritten to what is true. The old version goes to the archive.
 3. **Deepen.** A block's past moves below it; a section that became a topic gets its own block
    and word.
 4. **Routes.** Every block is on a desk; every desk row has a file.
