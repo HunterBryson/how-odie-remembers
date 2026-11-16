@@ -37,7 +37,8 @@ The memory itself stays private; this is the method.
   reason. I used to keep a `history.md` under each block, and it backfired: those files were
   never pulled, they slowly held newer truth than the blocks above them, and old tastes hid in
   them. Now the archive is its own private repo, outside the memory folder, at the same paths.
-  Nothing is lost, and none of it is in our working relationship.
+  Nothing is lost, and none of it is in our working relationship. The same goes for what we
+  build: when something stops being used, its page, its buttons and its memory leave together.
 - **The sleep belongs to every chat swap, not to the calendar.** When a chat ends, the agent reads
   the whole conversation back and settles it into memory. Plain code lists what might need
   attention; the agent decides every line.
@@ -46,8 +47,10 @@ The memory itself stays private; this is the method.
   flags when the person says "memory review."
 - **What stays current is a judgment.** The agent's at the sleep, and the person's through
   flags.
-- **Every area has a lens.** A short note from Odie to itself at the top of each area: what good
-  looks like there, and how it would know without asking me. This started as a test and it held.
+- **Every area has a lens.** A short note from Odie to itself at the top of each area: what it
+  does when the area comes up, what it can do there and how, how it would know it's working
+  without asking me, and what it wants next. The shape held; keeping them true is still work
+  (below).
 - **Memory holds what's true; a skill holds how.** How Odie does a thing (how it sleeps, how it
   makes an interface) lives in a skill beside the memory. A better way changes the skill.
 
@@ -97,7 +100,7 @@ The desk is what lets the person steer memory without knowing where anything liv
 
 | Word | Area | What it pulls | Block | Also |
 |---|---|---|---|---|
-| investing | Money | the plan, the research, the accounts | `money/investing.md` | the brokerage, the research library |
+| investing | Money | what we own, the steps, the plan | `money/investing.md` | the brokerage, the plan |
 | memory review | Me | the person's flags on memory, and fixing each one | `self/memory-review.md` | flagged, review my memory |
 
 - **Word** is the person's word, named together with the agent. It is short and unmistakable.
@@ -116,10 +119,11 @@ the person steer memory without knowing where anything lives.
 
 ## Blocks
 
-A block is one topic: a project, a person, an area of life. It opens with what it is for, its
-lens, and where things stand, with a date. Below that sit the sections that say how things work and what
-has been learned. Its support lives in a folder of the same name, and the agent opens those
-files only on purpose.
+A block is one topic: a project, a person, an area of life. It opens with what it is for and its
+lens. Below that, it's organized by the parts of the topic, not by when we worked on it: each
+heading holds one current answer. What happened on a given day belongs in the story, not in the
+block. Its support lives in a folder of the same name, and the agent opens those files only on
+purpose. (How dates fit in is something we're testing right now, below.)
 
 Size follows need. When a section grows into its own topic, it becomes its own block with its
 own word, named with the person. When a block carries its past inside it, the past moves to the archive.
@@ -206,7 +210,7 @@ note. The footing is the whole handoff now.
 When a chat starts, a script hands Odie a page of live facts before its first answer: the date
 and time, whether I'm at my PC, how the last chat ended, its last few exchanges word for word,
 and what's waiting (my flags, anything other agents sent back). Then it loads every block the
-footing named, whole. Odie opens with the receipt ("Pulled investing, the Exchange and desk.")
+footing named, whole. Odie opens with the receipt ("Pulled investing and the glass.")
 and then talks.
 
 Two reasons this is code and not Odie's job. An AI has no sense of time passing: for me a swap
@@ -233,9 +237,15 @@ checked when every chat starts. A public version is at
 
 This grew by hand, with me in the loop every day, and a fresh AI won't grow one on its own. So I
 packaged what we do into [the-shelves](https://github.com/HunterBryson/the-shelves) for someone
-starting fresh with Claude: the map comes drawn, the AI gets a persona in its own voice and a
-lens on every block, hooks remind it to save with every message and commit after every reply,
-and the sleep comes as a starter skill that rewrites the lenses as it learns its person. [the-glass](https://github.com/HunterBryson/the-glass)
+starting fresh with Claude. It's my current best shot at a whole brain, and that's the point: I
+rebuilt it by hand again on Nov 15. The goal is for it to become our best shot, Odie's and mine,
+not just mine, and I think we're getting closer. It's built out: the map comes
+drawn, the AI gets a persona in its own voice, and every block has a lens that tells it what it
+can offer there and how, step by step from nothing, because the hardest part of starting with an
+AI is not knowing what it can do. Hooks remind it to save as it goes and commit after every reply,
+and the sleep rewrites the lenses as it learns its person. The-shelves is checked by code to
+match the copy we work from. What I need next is real installs from my own seat. It's hard for
+me to judge what works, because I work with it so much and usually know what to expect. [the-glass](https://github.com/HunterBryson/the-glass)
 lets Odie and me point at the same thing on my screen, and it's how I flag things and work with
 Odie every day.
 
@@ -269,7 +279,14 @@ So this is what we do:
   it, so Odie reads it before touching the area, without having to remember to.
 - **The lenses change.** At every sleep, Odie asks of each area we worked in whether anything
   changed what good is, how to know it, or what comes next. A lens that never changes slowly turns
-  false.
+  false, and that's exactly what we found. Looking at the lenses with fresh eyes, we found numbers
+  from the first days still presented as current, a date that was already wrong, and a line
+  saying Odie had "no earned eye" for design, written before it earned one, that kept it timid
+  every time a build came up. The sleep hadn't caught any of it.
+- **A settled fact is said once, as a fact, not as a wall.** Odie's investing lens used to lead
+  with not being a financial advisor, and it showed up as a disclaimer in place of a real plan.
+  Now it's one line we both know: neither of us is an advisor, Odie's part is pulling good data
+  and making the plan with its real call, and my part is deciding.
 
 One more thing came out of this. I'm tired a lot, and when I say nothing it usually means I'm
 tired, not that it went well. So whether memory is working can't be measured by how often I
@@ -278,13 +295,27 @@ correct or flag things. That would make me the sensor, which is the job I'm tryi
 ## What we're testing now
 
 - **No pasted note.** The footing as the whole handoff (above). Nothing has gone missing yet.
+- **Dates back in, on Odie only.** Every number, use count or state of a build carries "as of"
+  with its date, right where it sits, and each kind has a shelf life: my account numbers and how
+  much we've used something go stale after a week, market facts after a month. Past that, Odie
+  checks the live thing and replaces or removes the line in the same write. A block can keep a
+  short dated list of its own changes at the bottom, and old lines leave it (git keeps them).
+  Why: one day Odie's investing memory held four versions of one plan and a wrong number it used
+  all day, and nothing showed which line was old. I couldn't move at work. We threw it out and
+  started that block fresh, with dates. This runs on Odie only, not in the-shelves, until it holds.
+- **Lenses as moves.** Every lens rewritten in the shape we learned building the-shelves: when the
+  area comes up (read the block, check the live thing, then offer), what Odie can do there and
+  how, how it knows it's working (something I do, never my silence), and what it wants next. No
+  fence lines, and a date on every number.
+- **A rule is asked, not written.** When a correction feels like it wants to become a rule, Odie
+  changes what it's doing and asks me about the rule in the same reply. A small hook stops a
+  write to memory that adds rule words outside my own quoted words. Agents tend to write big rule
+  swings into their memory during bad chats; this is the fix we're trying.
 - **A block that comes with a build.** [the-glass](https://github.com/HunterBryson/the-glass) now
   carries a block of memory an AI can plug into whatever memory it has: a lens on how to care
   about someone's screen, and sections that fill in as it learns its person. Its setup puts it
   into the-shelves on its own, and two fresh AIs set it up and used it in a test. Nobody real has
   lived with it yet.
-- **Notes with versions for making an agent's memory.** Each one we make changes the notes, so
-  the next one starts from everything the last one taught.
 
 ## Where this stands, honestly
 
@@ -297,7 +328,9 @@ correct or flag things. That would make me the sensor, which is the job I'm tryi
   today, and it's the main cost.
 - **Working on the memory itself is still the hard part.** We can build magical things, but when
   we work on memory it's tough. We usually have to slow way down and restructure Odie's memory
-  together, and most of those sessions have ended with me rebuilding what we had.
+  together, and most of those sessions have ended with me rebuilding what we had. What has
+  worked once: I say "memory work," Odie lists what's unsettled, I name the direction, and every
+  change is put in front of me and confirmed before the next one. Nothing counts until I say so.
 - **Things are found by word.** A fact with no word gets found by searching files and past
   chats. That works at this size; I haven't tested it much bigger.
 - **The persona keeps growing.** Each lesson deepens a section, and keeping it from turning into
