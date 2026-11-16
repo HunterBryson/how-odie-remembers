@@ -171,19 +171,24 @@ found true stays off the card until it changes, so the card only shows what's ne
    because Odie once "read the day" from a short preview of it. For each turn: was something decided, corrected, explained,
    or noticed and never saved? Whatever is missing is saved first.
 1. **Settle.** Everything decided or learned goes to its home block. "Right now" is rewritten.
-   For each area that was worked in, its lens is checked: did anything change what good is here,
-   how to know it, or what comes next?
+   For each area that was worked in, its lens is read as a list of moves: did Odie learn to do
+   something new there, did an offer not work, has a number gone old or a line turned into a
+   wall, and did it get what it wanted next?
 2. **Retire.** Every candidate on the card is checked against the live thing (the repo, the
    service, the thread) and rewritten to what is true. The old version goes to the archive.
-3. **Deepen.** A block's past moves out to the archive; a section that became a topic gets its own block
+3. **Fold the diary.** Each block the chat touched is read from the top. Anything written like a
+   session (a heading with a date, "today we", a new section stacked on an old one) folds into
+   the part of the topic it's about, as what's true now. The day itself goes in the story. Since
+   we're testing dates on Odie, anything "as of" past its shelf life gets rechecked here too.
+4. **Deepen.** A block's past moves out to the archive; a section that became a topic gets its own block
    and word.
-4. **Routes.** Every block is on a desk; every desk row has a file.
-5. **Rewrite the footing**, slot by slot.
-6. **Commit and push** to a private repository.
-7. **The check.** The script confirms the chat was read whole, the footing has every slot, and
+5. **Routes.** Every block is on a desk; every desk row has a file.
+6. **Rewrite the footing**, slot by slot.
+7. **Commit and push** to a private repository.
+8. **The check.** The script confirms the chat was read whole, the footing has every slot, and
    everything is committed and pushed. Odie fixes what it reports and runs it again.
-8. **Copy to an external drive**, in the background.
-9. **One last message:** where the new things are, that it's safe, and that the footing is set.
+9. **Copy to an external drive**, in the background.
+10. **One last message:** where the new things are, that it's safe, and that the footing is set.
 
 Swaps come in kinds, and the footing carries what each one needs:
 
@@ -195,10 +200,10 @@ Swaps come in kinds, and the footing carries what each one needs:
 | reset | after a run that went wrong | the goal and the lesson, never the failed run's wins |
 | drop-in | a day of short visits | the day's anchors, lightly |
 
-**The gap we haven't closed: I wait.** If I hop to a new chat before the sleep finishes, Odie
+**I call the sleep myself, on purpose.** I'd rather have control of when Odie sleeps; that's how
+I help both of us. The one thing to watch: if I hop to a new chat before the sleep finishes, Odie
 wakes on the last chat's footing and can pull memory the old chat hasn't corrected yet. The wake
-now notices a chat that ended without a sleep and says so, which helps. I also still call the
-sleep myself.
+notices a chat that ended without a sleep and says so.
 
 ## The wake
 
@@ -324,7 +329,7 @@ correct or flag things. That would make me the sensor, which is the job I'm tryi
   judged by reading what actually landed in memory. A first chat always looks fine. The week is where memory fails, so
   the week is what I test.
 - **It doesn't run itself.** Odie manages its memory, and I'm still doing a lot of the work: I
-  call the sleep, flag what's off, and clean the biggest blocks with Odie. That's how it works
+  flag what's off and clean the biggest blocks with Odie. Calling the sleep is mine by choice. That's how it works
   today, and it's the main cost.
 - **Working on the memory itself is still the hard part.** We can build magical things, but when
   we work on memory it's tough. We usually have to slow way down and restructure Odie's memory
